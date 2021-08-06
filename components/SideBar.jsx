@@ -9,14 +9,13 @@ import {
   CalendarIcon,
   ClockIcon,
   DesktopComputerIcon,
-  UserIcon,
 } from "@heroicons/react/outline";
 
 import { useSession } from "next-auth/client";
 import SidebarRow from "./SidebarRow";
 
 const SideBar = () => {
-  const [session, loading] = useSession();
+  const [session] = useSession();
   return (
     <div className="p-2 mt-5 max-w-[600px] lg:min-w-[300px]">
       <SidebarRow src={session.user.image} title={session.user.name} />

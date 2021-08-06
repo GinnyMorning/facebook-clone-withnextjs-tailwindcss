@@ -9,7 +9,7 @@ import {
 import { db, storage } from "../firebase";
 import firebase from "firebase";
 
-const InputPost = ({ src }) => {
+const InputPost = () => {
   const [session] = useSession();
   const inputRef = useRef(null);
   const filePickerRef = useRef(null);
@@ -106,7 +106,7 @@ const InputPost = ({ src }) => {
             onClick={removeImageFromPost}
             className="flex flex-col filter hover:brightness-125 transition duration-75 transform hover:scale-105 cursor-pointer"
           >
-            <img src={imageToPost} alt="" className="h-10 object-contain" />
+            <Image src={imageToPost} alt="" className="h-10 object-contain" />
             <p className="text-red-500 text-xs text-center">Remove</p>
           </div>
         )}

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const StoryCard = ({ name, src, profile }) => {
+const StoryCard = ({ src, profile }) => {
   //   console.log({ src });
   return (
     <div className="relative h-14 w-14 md:w-20 md:h-20 lg:h-56 lg:w-32 cursor-pointer overflow-x-auto p-3 transition duration-200 transform ease-in hover:scale-105 hover:animate-pulse">

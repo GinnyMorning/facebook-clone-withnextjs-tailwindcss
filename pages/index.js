@@ -1,6 +1,6 @@
+import React from 'react'
 import { getSession } from "next-auth/client";
 import Head from "next/head";
-import Image from "next/image";
 import Feed from "../components/Feed";
 import Header from "../components/Header";
 import Login from "../components/Login";
