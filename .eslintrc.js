@@ -4,8 +4,8 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "next:next/core-web-vitals",
-    // "eslint:recommended",
+    "eslint:recommended",
+    "next/core-web-vitals",
     "plugin:react/recommended",
   ],
   parserOptions: {
@@ -16,5 +16,5 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react"],
-  rules: {},
+  rules: {"react/prop-types":"off","no-undef":"off"},
 };
